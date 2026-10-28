@@ -1,0 +1,22 @@
+{
+  "name": "field-photo-multipart-cutover",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/work_order_media_service.ts",
+    "start": "tsx src/work_order_media_service.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/upload_policy.test.ts"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

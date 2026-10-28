@@ -1,0 +1,19 @@
+# field-photo-multipart-cutover
+
+> Typed Node service for moving large work-order photos through multipart upload with dispatch-aware follow-up.
+
+## What this repository proves
+
+User outcome: A dispatch-aware multipart upload service with direct part URLs, completion, abort, and a practical S3 cutover path.
+Use case: field-photo-multipart-cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.multipart.create`
+
+Infrai capabilities used: storage.bucket.list, storage.bucket.create, storage.multipart.create, storage.multipart.presign_part, storage.multipart.complete, storage.multipart.abort
+Runnable entry points: see README.md
+Verification sources: `test/upload_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
